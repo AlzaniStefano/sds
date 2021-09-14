@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Helvetica, sans-serif;
+
+  color: $text-primary;
+  background-color: $bg-primary;
+
+  .main-container {
+    max-width: 1440px;
+    border: 1px solid red;
+    margin: 0 auto;
+    position: relative;
+  }
+
+}
