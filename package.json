@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/AlzaniStefano/sds#readme",
   "dependencies": {
-    "fullpage.js": "^3.1.2",
+    "fullpage.js": "file:../../../Downloads/fullPage.js-master",
     "node-sass": "^6.0.1"
   }
 }

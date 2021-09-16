@@ -1,18 +1,28 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background: #000;
+  color: #FFF;
+}
+.section {
+  text-align:center;
+  font-size: 3em;
+}
+.content{
+  margin:50px
+}
+.main-navigation {
+  position: fixed;
+  width: fit-content;
+  height: 100%;
+  border-right: 1px solid white;
+  z-index: 999;
 
-  font-family: Helvetica, sans-serif;
+  ul {
+    list-style-type: none;
+    padding: 0;
 
-  color: $text-primary;
-  background-color: $bg-primary;
-
-  .main-container {
-    max-width: 1440px;
-    border: 1px solid red;
-    margin: 0 auto;
-    position: relative;
+    li {
+      font-size: 2.4rem;
+      padding: 1.2rem 2.4rem;
+    }
   }
-
 }

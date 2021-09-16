@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seven Deadly Sins 2136</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+  <title>Full Page Scrolling Using FullPage Js</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+  <!--FullPage Js-->
+  <link rel="stylesheet" type="text/css" href="/node_modules/fullpage.js/src/fullpage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" integrity="sha512-hDXpx6vRwBR+f4rnj8BDQRpwfi4lvztz1KPkBPCG2XkTKiJ5Y6zq7/NsDmJRIQbquKchG0DVc6gmZiOE0ZXrvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--End FullPage Js-->
 </head>
+
 <body>
-  <div id="fullpage">
-    <div class="section">One</div>
-    <div class="section">
-        <div class="slide" data-anchor="slide1">Two 1</div>
-        <div class="slide" data-anchor="slide2">Two 2</div>
+  <nav class="main-navigation">
+    <ul>
+      <li>Home</li>
+      <li>Project</li>
+      <li>Artwork</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+    <div id="fullpage">
+      <div class="section">Section 1</div>
+      <div class="section">Two</div>
+      <div class="section">Three</div>
     </div>
-    <div class="section">Three</div>
-    <div class="section">Four</div>
-</div>
+
+  <script src="./scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js" integrity="sha512-+m1+m9XBnZXowk9jSNIlZYgtOPTIu6aUHha/4/3dk84PQcpWgrNd4/zKmOYno0BQK9nuJ6WgYBnuPqCrmvMNtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new fullpage('#fullpage', {
+      autoScrolling:true,
+    })
+  </script>
 </body>
-<script src="./scripts/main.js"></script>
 </html>
