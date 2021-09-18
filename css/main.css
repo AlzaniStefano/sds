@@ -1,23 +1,107 @@
-body {
-  background: #000;
-  color: #FFF; }
-
-.section {
-  text-align: center;
-  font-size: 3em; }
-
-.content {
-  margin: 50px; }
+html {
+  font-size: 62.5%; }
+  html body {
+    background: #000;
+    color: #FFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.6rem; }
+    html body .main-container {
+      margin-left: 250px; }
 
 .main-navigation {
   position: fixed;
-  width: fit-content;
+  width: 250px;
   height: 100%;
-  border-right: 1px solid white;
-  z-index: 999; }
-  .main-navigation ul {
-    list-style-type: none;
-    padding: 0; }
-    .main-navigation ul li {
-      font-size: 2.4rem;
-      padding: 1.2rem 2.4rem; }
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-navigation .nav-list-wrapper {
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0px; }
+    .main-navigation .nav-list-wrapper ul {
+      list-style-type: none;
+      padding: 0; }
+      .main-navigation .nav-list-wrapper ul li {
+        font-size: 2.4rem;
+        padding: 2rem 3.2rem;
+        text-align: center; }
+  .main-navigation .nav-logo {
+    position: absolute;
+    opacity: 1;
+    top: 4rem;
+    left: 4rem;
+    width: 12rem;
+    height: auto;
+    transition: all .5s ease-in-out; }
+
+body.fp-viewing-0 .nav-logo {
+  opacity: 0; }
+
+.button {
+  background-color: #f8f8f8;
+  color: #191919;
+  width: fit-content;
+  padding: 1.3rem 2.4rem;
+  border-radius: 20px;
+  text-decoration: none; }
+
+.section-1 {
+  opacity: 0;
+  transition: all .8s ease-in-out; }
+  .section-1.active.fp-completely {
+    opacity: 1; }
+  .section-1 .slide-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .section-1 .slide-1 .home-page-logo {
+      width: 30vw;
+      max-width: 40rem;
+      height: auto; }
+    .section-1 .slide-1 .presentation-text {
+      margin: 6rem 10%; }
+      .section-1 .slide-1 .presentation-text p {
+        text-align: center; }
+
+.section-2 {
+  opacity: 0;
+  transition: all .8s ease-in-out; }
+  .section-2.active.fp-completely {
+    opacity: 1; }
+  .section-2 .slide-2 {
+    display: flex; }
+    .section-2 .slide-2 .left-part, .section-2 .slide-2 .right-part {
+      flex: 1;
+      width: 50%;
+      height: 100vh; }
+    .section-2 .slide-2 .left-part {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5rem; }
+      .section-2 .slide-2 .left-part .title {
+        font-size: 4.2rem;
+        margin: 0;
+        margin-bottom: 3rem; }
+      .section-2 .slide-2 .left-part .project-description {
+        margin: 0;
+        margin-bottom: 3rem; }
+    .section-2 .slide-2 .right-part {
+      position: relative; }
+      .section-2 .slide-2 .right-part img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .section-2 .slide-2 .right-part .pic-frame {
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: inset 0px 1px 220px 150px #000000; }
