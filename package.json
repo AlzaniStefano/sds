@@ -14,14 +14,15 @@
   "keywords": [
     "Midahmi97"
   ],
-  "author": "",
+  "author": "Stefano ALzani & Andrea Battigaglia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlzaniStefano/sds/issues"
   },
   "homepage": "https://github.com/AlzaniStefano/sds#readme",
   "dependencies": {
-    "fullpage.js": "file:../../../Downloads/fullPage.js-master",
+    "fullpage.js": "^3.1.2",
     "node-sass": "^6.0.1"
-  }
+  },
+  "devDependencies": {}
 }
