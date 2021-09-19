@@ -1,7 +1,7 @@
 .section-1 {
   opacity: 0;
   transition: all .8s ease-in-out;
-  &.active.fp-completely {
+  &.active {
     opacity: 1;
   }
 

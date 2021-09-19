@@ -21,7 +21,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0px; }
+    padding: 4rem 0px;
+    width: 230px; }
     .main-navigation .nav-list-wrapper ul {
       list-style-type: none;
       padding: 0; }
@@ -29,6 +30,13 @@ html {
         font-size: 2.4rem;
         padding: 2rem 3.2rem;
         text-align: center; }
+        .main-navigation .nav-list-wrapper ul li a {
+          color: rgba(248, 248, 248, 0.5);
+          text-decoration: none;
+          font-weight: 300;
+          transition: all .5s ease-in-out; }
+          .main-navigation .nav-list-wrapper ul li a:hover {
+            letter-spacing: 3px; }
   .main-navigation .nav-logo {
     position: absolute;
     opacity: 1;
@@ -38,8 +46,24 @@ html {
     height: auto;
     transition: all .5s ease-in-out; }
 
-body.fp-viewing-0 .nav-logo {
+body.fp-viewing-Home .nav-logo {
   opacity: 0; }
+
+body.fp-viewing-Home .nav-list-wrapper ul li:nth-child(1) a {
+  color: #f8f8f8;
+  letter-spacing: 5px; }
+
+body.fp-viewing-Project .nav-list-wrapper ul li:nth-child(2) a {
+  color: #f8f8f8;
+  letter-spacing: 5px; }
+
+body[class*="fp-viewing-Artworks"] .nav-list-wrapper ul li:nth-child(3) a {
+  color: #f8f8f8;
+  letter-spacing: 5px; }
+
+body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
+  color: #f8f8f8;
+  letter-spacing: 5px; }
 
 .button {
   background-color: #f8f8f8;
@@ -47,12 +71,14 @@ body.fp-viewing-0 .nav-logo {
   width: fit-content;
   padding: 1.3rem 2.4rem;
   border-radius: 20px;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500; }
 
 .section-1 {
   opacity: 0;
   transition: all .8s ease-in-out; }
-  .section-1.active.fp-completely {
+  .section-1.active {
     opacity: 1; }
   .section-1 .slide-1 {
     display: flex;
@@ -71,7 +97,7 @@ body.fp-viewing-0 .nav-logo {
 .section-2 {
   opacity: 0;
   transition: all .8s ease-in-out; }
-  .section-2.active.fp-completely {
+  .section-2.active {
     opacity: 1; }
   .section-2 .slide-2 {
     display: flex; }
@@ -105,3 +131,70 @@ body.fp-viewing-0 .nav-logo {
         height: 100%;
         width: 100%;
         box-shadow: inset 0px 1px 220px 150px #000000; }
+
+.section-3 {
+  opacity: 0;
+  transition: all .8s ease-in-out; }
+  .section-3.active {
+    opacity: 1; }
+  .section-3 .slide-3 .slide-container {
+    margin: 0 8rem;
+    display: flex; }
+    .section-3 .slide-3 .slide-container .left-part, .section-3 .slide-3 .slide-container .right-part {
+      flex: 1;
+      width: 50%;
+      height: 70vh; }
+    .section-3 .slide-3 .slide-container .right-part {
+      display: flex;
+      justify-content: center; }
+      .section-3 .slide-3 .slide-container .right-part img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; }
+    .section-3 .slide-3 .slide-container .left-part {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .section-3 .slide-3 .slide-container .left-part .number {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        font-size: 32rem;
+        font-weight: bolder;
+        color: rgba(0, 0, 0, 0.5);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #f8f8f8;
+        opacity: .3;
+        z-index: -1; }
+      .section-3 .slide-3 .slide-container .left-part .title {
+        font-size: 10rem;
+        font-weight: bolder;
+        margin: 0;
+        padding-right: 2rem;
+        text-shadow: 0 0 20px black; }
+      .section-3 .slide-3 .slide-container .left-part .description {
+        padding-right: 2rem;
+        margin-bottom: 4rem; }
+  .section-3 .sin {
+    position: relative; }
+    .section-3 .sin::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: blur(8px) brightness(0.6);
+      box-shadow: inset 0px -15px 200px 100px #000000; }
+    .section-3 .sin.sin-1::before {
+      background-image: url("../../assets/img/sins/01.accidia.jpg"); }
+    .section-3 .sin.sin-2::before {
+      background-image: url("../../assets/img/sins/02.avarizia.jpg"); }
+    .section-3 .sin.sin-3::before {
+      background-image: url("../../assets/img/sins/03.gola.jpg"); }
+    .section-3 .sin.sin-4::before {
+      background-image: url("../../assets/img/sins/04.invidia.jpg"); }
