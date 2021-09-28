@@ -8,6 +8,12 @@
   text-transform: uppercase;
   font-weight: 600;
   transition: all .3s ease-in-out;
+  font-size: 1.3rem;
+
+  &.disabled {
+    opacity: .2;
+    pointer-events: none;
+  }
 
   &:hover {
     color: $black;

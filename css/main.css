@@ -87,7 +87,11 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  transition: all .3s ease-in-out; }
+  transition: all .3s ease-in-out;
+  font-size: 1.3rem; }
+  .button.disabled {
+    opacity: .2;
+    pointer-events: none; }
   .button:hover {
     color: #191919;
     transform: translateY(-5px); }
@@ -110,7 +114,8 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
       margin: 6rem 10%; }
       .section-1 .slide-1 .presentation-text p {
         text-align: center;
-        max-width: 71rem; }
+        max-width: 71rem;
+        margin-bottom: 0; }
 
 @media (max-width: 768px) {
   .section-1 .slide-1 .home-page-logo {
@@ -191,6 +196,7 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
       justify-content: center; }
       .section-3 .slide-3 .slide-container .right-part img {
         width: 100%;
+        max-width: 550px;
         height: auto;
         object-fit: contain; }
     .section-3 .slide-3 .slide-container .left-part {
@@ -231,8 +237,8 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
         left: 0;
         width: 60px; }
     .section-3 .slide-3 .fp-controlArrow.fp-prev {
-      left: inherit;
-      right: 208px; }
+      left: 55px !important;
+      right: inherit; }
       .section-3 .slide-3 .fp-controlArrow.fp-prev::after {
         content: url("../../assets/icons/prev.svg");
         position: absolute;
@@ -256,39 +262,61 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
     .section-3 .sin.sin-1::before {
       background-image: url("../../assets/img/sins/01.accidia.jpg"); }
     .section-3 .sin.sin-2::before {
-      background-image: url("../../assets/img/sins/02.avarizia.jpg"); }
+      background-image: url("../../assets/img/sins/02.gola.jpg"); }
     .section-3 .sin.sin-3::before {
-      background-image: url("../../assets/img/sins/03.gola.jpg"); }
+      background-image: url("../../assets/img/sins/03.lussuria.jpg"); }
     .section-3 .sin.sin-4::before {
-      background-image: url("../../assets/img/sins/04.invidia.jpg"); }
+      background-image: url("../../assets/img/sins/04.ira.jpg"); }
+    .section-3 .sin.sin-5::before {
+      background-image: url("../../assets/img/sins/05.avarizia.jpg"); }
+    .section-3 .sin.sin-6::before {
+      background-image: url("../../assets/img/sins/06.invidia.jpg"); }
+    .section-3 .sin.sin-7::before {
+      background-image: url("../../assets/img/sins/07.superbia.jpg"); }
 
 @media (max-width: 1300px) {
   .section-3 .slide-3 .slide-container {
-    margin: 0 3rem;
+    margin: 0 3rem 5rem;
     flex-direction: column-reverse; }
     .section-3 .slide-3 .slide-container .left-part, .section-3 .slide-3 .slide-container .right-part {
       flex: 1;
       width: 100%;
       height: 70vh; }
-    .section-3 .slide-3 .slide-container .right-part img {
-      width: 75%; }
+    .section-3 .slide-3 .slide-container .right-part {
+      margin-top: 3rem; }
+      .section-3 .slide-3 .slide-container .right-part img {
+        width: 75%;
+        max-width: 450px; }
     .section-3 .slide-3 .slide-container .left-part {
-      position: inherit; }
+      position: inherit;
+      align-items: center; }
       .section-3 .slide-3 .slide-container .left-part .number {
         position: absolute;
         top: 1rem;
         right: 1rem;
-        font-size: 8rem; }
+        font-size: 8rem;
+        z-index: 4;
+        color: rgba(0, 0, 0, 0.5);
+        opacity: .8; }
       .section-3 .slide-3 .slide-container .left-part .title {
-        font-size: 6rem;
+        font-size: 3.8rem;
         font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 8px;
         margin: 0;
         margin-top: 2rem;
         padding-right: 0;
-        text-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+        text-shadow: 0 0 20px #d000ff;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #00aaff; }
       .section-3 .slide-3 .slide-container .left-part .description {
         padding-right: 0;
-        margin-bottom: 4rem; }
+        margin-bottom: 4rem;
+        font-size: 1.4rem;
+        line-height: normal;
+        max-width: 60rem;
+        text-align: center;
+        max-width: 50rem; }
   .section-3 .slide-3 .fp-controlArrow {
     top: inherit;
     bottom: 5rem;
@@ -296,7 +324,6 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
     .section-3 .slide-3 .fp-controlArrow.fp-next {
       right: 90px; }
       .section-3 .slide-3 .fp-controlArrow.fp-next::after {
-        content: url("../../assets/icons/next.svg");
         position: absolute;
         top: 0;
         left: 0;
@@ -305,12 +332,12 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
       left: inherit;
       right: 138px; }
       .section-3 .slide-3 .fp-controlArrow.fp-prev::after {
-        content: url("../../assets/icons/prev.svg");
         position: absolute;
         top: 0;
         left: 0;
         width: 40px; } }
 
+/* smartphones, touchscreens */
 .section-4 {
   opacity: 0;
   transition: all .8s ease-in-out; }
@@ -324,7 +351,13 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
     margin-bottom: 5rem; }
     .section-4 .slide-4 .contact-title {
       font-weight: normal;
-      font-size: 1.8rem; }
+      font-size: 1.4rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 2;
+      font-weight: 300;
+      margin: 3rem; }
     .section-4 .slide-4 .contact a {
       font-size: 3.2rem;
       font-weight: bolder;
