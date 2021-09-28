@@ -7,6 +7,19 @@ html {
     font-size: 1.6rem; }
     html body .main-container {
       margin-left: 250px; }
+    html body p {
+      line-height: 1.2; }
+    html body a {
+      color: inherit;
+      text-decoration: none; }
+      html body a:hover {
+        color: inherit; }
+
+@media (max-width: 768px) {
+  html body .main-container {
+    margin-left: 0; }
+  html body .main-navigation {
+    display: none; } }
 
 .main-navigation {
   position: fixed;
@@ -73,7 +86,11 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
   border-radius: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 600;
+  transition: all .3s ease-in-out; }
+  .button:hover {
+    color: #191919;
+    transform: translateY(-5px); }
 
 .section-1 {
   opacity: 0;
@@ -92,7 +109,19 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
     .section-1 .slide-1 .presentation-text {
       margin: 6rem 10%; }
       .section-1 .slide-1 .presentation-text p {
-        text-align: center; }
+        text-align: center;
+        max-width: 71rem; }
+
+@media (max-width: 768px) {
+  .section-1 .slide-1 .home-page-logo {
+    width: 60vw;
+    max-width: 40rem;
+    height: auto; }
+  .section-1 .slide-1 .presentation-text {
+    margin: 6rem 10%; }
+    .section-1 .slide-1 .presentation-text p {
+      text-align: center;
+      max-width: 71rem; } }
 
 .section-2 {
   opacity: 0;
@@ -130,7 +159,20 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
         left: 0;
         height: 100%;
         width: 100%;
-        box-shadow: inset 0px 1px 220px 150px #000000; }
+        box-shadow: inset 0px 1px 130px 10vw #000000; }
+
+@media (max-width: 768px) {
+  .section-2 .slide-2 {
+    display: flex; }
+    .section-2 .slide-2 .left-part, .section-2 .slide-2 .right-part {
+      flex: 1;
+      width: 50%;
+      height: 100vh; }
+    .section-2 .slide-2 .right-part {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      opacity: 0.3; } }
 
 .section-3 {
   opacity: 0;
@@ -172,10 +214,31 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
         font-weight: bolder;
         margin: 0;
         padding-right: 2rem;
-        text-shadow: 0 0 20px black; }
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
       .section-3 .slide-3 .slide-container .left-part .description {
-        padding-right: 2rem;
+        padding-right: 12rem;
         margin-bottom: 4rem; }
+  .section-3 .slide-3 .fp-controlArrow {
+    top: inherit;
+    bottom: 7rem;
+    border-color: transparent; }
+    .section-3 .slide-3 .fp-controlArrow.fp-next {
+      right: 140px; }
+      .section-3 .slide-3 .fp-controlArrow.fp-next::after {
+        content: url("../../assets/icons/next.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px; }
+    .section-3 .slide-3 .fp-controlArrow.fp-prev {
+      left: inherit;
+      right: 208px; }
+      .section-3 .slide-3 .fp-controlArrow.fp-prev::after {
+        content: url("../../assets/icons/prev.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6rem; }
   .section-3 .sin {
     position: relative; }
     .section-3 .sin::before {
@@ -198,3 +261,90 @@ body.fp-viewing-Contact .nav-list-wrapper ul li:nth-child(4) a {
       background-image: url("../../assets/img/sins/03.gola.jpg"); }
     .section-3 .sin.sin-4::before {
       background-image: url("../../assets/img/sins/04.invidia.jpg"); }
+
+@media (max-width: 1300px) {
+  .section-3 .slide-3 .slide-container {
+    margin: 0 3rem;
+    flex-direction: column-reverse; }
+    .section-3 .slide-3 .slide-container .left-part, .section-3 .slide-3 .slide-container .right-part {
+      flex: 1;
+      width: 100%;
+      height: 70vh; }
+    .section-3 .slide-3 .slide-container .right-part img {
+      width: 75%; }
+    .section-3 .slide-3 .slide-container .left-part {
+      position: inherit; }
+      .section-3 .slide-3 .slide-container .left-part .number {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 8rem; }
+      .section-3 .slide-3 .slide-container .left-part .title {
+        font-size: 6rem;
+        font-weight: bolder;
+        margin: 0;
+        margin-top: 2rem;
+        padding-right: 0;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+      .section-3 .slide-3 .slide-container .left-part .description {
+        padding-right: 0;
+        margin-bottom: 4rem; }
+  .section-3 .slide-3 .fp-controlArrow {
+    top: inherit;
+    bottom: 5rem;
+    border-color: transparent; }
+    .section-3 .slide-3 .fp-controlArrow.fp-next {
+      right: 90px; }
+      .section-3 .slide-3 .fp-controlArrow.fp-next::after {
+        content: url("../../assets/icons/next.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px; }
+    .section-3 .slide-3 .fp-controlArrow.fp-prev {
+      left: inherit;
+      right: 138px; }
+      .section-3 .slide-3 .fp-controlArrow.fp-prev::after {
+        content: url("../../assets/icons/prev.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px; } }
+
+.section-4 {
+  opacity: 0;
+  transition: all .8s ease-in-out; }
+  .section-4.active {
+    opacity: 1; }
+  .section-4 .slide-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem; }
+    .section-4 .slide-4 .contact-title {
+      font-weight: normal;
+      font-size: 1.8rem; }
+    .section-4 .slide-4 .contact a {
+      font-size: 3.2rem;
+      font-weight: bolder;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 1s ease-in-out;
+      opacity: .7;
+      color: rgba(0, 0, 0, 0.5);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #f8f8f8; }
+      .section-4 .slide-4 .contact a:hover {
+        letter-spacing: 7px;
+        opacity: 1;
+        color: #f8f8f8; }
+
+@media (max-width: 768px) {
+  .section-4 .slide-4 .contact a {
+    font-size: 1.8rem;
+    color: #f8f8f8; }
+    .section-4 .slide-4 .contact a:hover {
+      letter-spacing: 7px;
+      opacity: 1;
+      color: #f8f8f8; } }

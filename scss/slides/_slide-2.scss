@@ -45,9 +45,30 @@
         left: 0;
         height: 100%;
         width: 100%;
-        box-shadow: inset 0px 1px 220px 150px #000000;
+        box-shadow: inset 0px 1px 130px 10vw #000000;
       }
     }
 
+  }
+}
+
+@media (max-width: $break-medium) {
+  .section-2 {
+    .slide-2 {
+      display: flex;
+      .left-part, .right-part {
+        flex: 1;
+        width: 50%;
+        height: 100vh;
+      }
+  
+      .right-part {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        opacity: 0.3;
+      }
+  
+    }
   }
 }

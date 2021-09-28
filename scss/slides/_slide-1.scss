@@ -20,6 +20,27 @@
       margin: 6rem 10%;
       p {
         text-align: center;
+        max-width: 71rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $break-medium) {
+  .section-1 {  
+    .slide-1 {
+      .home-page-logo {
+        width: 60vw;
+        max-width: 40rem;
+        height: auto;
+      }
+      
+      .presentation-text {
+        margin: 6rem 10%;
+        p {
+          text-align: center;
+          max-width: 71rem;
+        }
       }
     }
   }
